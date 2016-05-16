@@ -1,0 +1,85 @@
+//Include style
+include ./block_html/style.jade
+body
+	//Include header
+
+	include ./block_html/elements/const.jade
+
+	.main-cont
+		include ./block_html/header.jade
+	.baner
+		.main-cont
+			.baner-contact-wrap
+				.baner-contact
+					.baner-contact-el +7 926-233-62-35
+					.baner-contact-el Москва
+				.baner-contact
+					.baner-contact-el Время работы:
+					.baner-contact-el с 10:00 до 22:00
+			.baner-title SuperVegan
+			.baner-sub-title интернет-магазин полезных продуктов
+			
+			.baner-bottom
+				.baner-bottom-text Один из лучших вегетарианских магазинов
+				a(href="#").baner-bottom-link Доказательства
+	include ./block_html/elements/top-menu.jade
+	.main-cont
+		.slider.owl-carousel
+			- for (var a = 0; a < 4; a++)
+				.slider-el(style="background-image: url('img/slider-item.jpg')")
+					.slider-title Акция!
+					.slider-text при покупке на сумму 3000 - скидка 5%
+		
+		.title Хиты продаж
+		.product-wrap
+			- for (var b = 0; b < 8; b++)
+				.product-el
+					img(src="img/product-el.jpg", alt="").product-el-img 
+					.product-el-title Fugiat nulla sint
+					.product-info
+						.product-info-star 
+							i.fa.fa-star
+							i.fa.fa-star
+							i.fa.fa-star
+							i.fa.fa-star
+							i.fa.fa-star.product-info-star-none
+						.product-info-price 2000 руб
+		
+		.title Новые товары
+		.product-wrap
+			- for (var b = 0; b < 4; b++)
+				.product-el
+					img(src="img/product-el.jpg", alt="").product-el-img 
+					.product-el-title Fugiat nulla sint
+					.product-info
+						.product-info-star 
+							i.fa.fa-star
+							i.fa.fa-star
+							i.fa.fa-star
+							i.fa.fa-star
+							i.fa.fa-star.product-info-star-none
+						.product-info-price 2000 руб
+
+		.title.title-red Специальное предложение
+		.product-wrap
+			- for (var b = 0; b < 4; b++)
+				.product-el
+					.product-el-sale -10%
+					img(src="img/product-el.jpg", alt="").product-el-img 
+					.product-el-title Fugiat nulla sint
+					.product-info
+						.product-info-star 
+							i.fa.fa-star
+							i.fa.fa-star
+							i.fa.fa-star
+							i.fa.fa-star
+							i.fa.fa-star.product-info-star-none
+						.product-info-price 2000 руб
+
+
+
+//Include footer
+include ./block_html/footer.jade
+include ./block_html/script.jade
+
+

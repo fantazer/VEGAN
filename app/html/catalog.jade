@@ -1,0 +1,103 @@
+//Include style
+include ./block_html/style.jade
+body
+	//Include header
+	include ./block_html/elements/const.jade
+
+	.main-cont
+		include ./block_html/header.jade
+	.baner-small
+		.main-cont
+			.baner-small-wraper
+				.baner-small-contact +7 926-233-62-35
+				.baner-small-title SuperVegan
+				.baner-small-sub-title интернет-магазин полезных продуктов
+	include ./block_html/elements/top-menu.jade
+	.main-cont
+		.Row.catalog-wraper
+			.Col.Col--md-3
+				.left-menu
+					a(href="#").left-menu-el Растительные молочные продукты
+					a(href="#").left-menu-el Сухие соевые продукты
+					a(href="#").left-menu-el Вегетарианские колбасыты
+					a(href="#").left-menu-el Соевый соус, хумус
+					a(href="#").left-menu-el Водоросли, азиатская лапша
+					a(href="#").left-menu-el Растительные масла
+					a(href="#").left-menu-el Приравы и специи
+					a(href="#").left-menu-el Полезные сладости
+
+			.Col.Col--md-9
+				.title Хиты продаж
+				.product-wrap
+					- for (var b = 0; b < 3; b++)
+						a(href="#").product-el
+							img(src="img/product-el.jpg", alt="").product-el-img 
+							.product-el-title Fugiat nulla sint
+							.product-info
+								.product-info-star 
+									i.fa.fa-star
+									i.fa.fa-star
+									i.fa.fa-star
+									i.fa.fa-star
+									i.fa.fa-star.product-info-star-none
+								.product-info-price 2000 руб
+
+				.title Новые товары
+				.product-wrap
+					- for (var b = 0; b < 3; b++)
+						a(href="#").product-el
+							img(src="img/product-el.jpg", alt="").product-el-img 
+							.product-el-title Fugiat nulla sint
+							.product-info
+								.product-info-star 
+									i.fa.fa-star
+									i.fa.fa-star
+									i.fa.fa-star
+									i.fa.fa-star
+									i.fa.fa-star.product-info-star-none
+								.product-info-price 2000 руб
+
+				.title.title-red Специальное предложение
+				.product-wrap
+					- for (var b = 0; b < 3; b++)
+						a(href="#").product-el
+							.product-el-sale -10%
+							img(src="img/product-el.jpg", alt="").product-el-img 
+							.product-el-title Fugiat nulla sint
+							.product-info
+								.product-info-star 
+									i.fa.fa-star
+									i.fa.fa-star
+									i.fa.fa-star
+									i.fa.fa-star
+									i.fa.fa-star.product-info-star-none
+								.product-info-price 2000 руб
+
+				.title Растительные молочные продукты
+				.product-wrap
+					- for (var b = 0; b < 12; b++)
+						a(href="#").product-el
+							img(src="img/product-el.jpg", alt="").product-el-img 
+							.product-el-title Fugiat nulla sint
+							.product-info
+								.product-info-star 
+									i.fa.fa-star
+									i.fa.fa-star
+									i.fa.fa-star
+									i.fa.fa-star
+									i.fa.fa-star.product-info-star-none
+								.product-info-price 2000 руб
+				
+				.pagination
+					a(href="#") 1
+					a(href="#") 2
+					a(href="#") 3
+					a(href="#") ....
+					a(href="#") 11
+					a(href="#") 12
+					a(href="#") Следующая страница 
+//Include footer
+include ./block_html/footer.jade
+include ./block_html/script.jade
+
+

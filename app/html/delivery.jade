@@ -1,0 +1,68 @@
+//Include style
+include ./block_html/style.jade
+body
+	//Include header
+	include ./block_html/elements/const.jade
+
+	.main-cont
+		include ./block_html/header.jade
+	.baner-small
+		.main-cont
+			.baner-small-wraper
+				.baner-small-contact +7 926-233-62-35
+				.baner-small-title SuperVegan
+				.baner-small-sub-title интернет-магазин полезных продуктов
+	include ./block_html/elements/top-menu.jade
+	.main-cont
+		.Row.dellivery-wrap
+			.Col.Col--md-6
+				.dellivery-el
+					.title-mid Доставка
+					p По Москве с 10:00 до 21:00 ежедневно
+					p При заказе до 12:00 доставка осуществляется
+					p в день заказа
+					p При заказе после 12:00 доставка осуществляется на следующий день
+					p 
+						strong Минимальная сумма заказа 500 руб
+				
+				.dellivery-el
+					.title-mid Самовывоз
+					p Вы можете забрать свой заказ по адресу:
+					p Улица Погодинская, д. 6 — здесь у нас
+					p  располагается склад магазина «SuperVegan».
+					p На заказы самовывозом установленная 
+					p минимальная сумма составляет 500 рублей.
+
+			.Col.Col--md-6
+				.dellivery-el
+					.title-mid Стоимость доставки
+					p В пределах МКАД:
+					p -заказ до 3000 руб - доставка 300 руб
+					p -заказ свыше 3000 руб - доставка бесплатно
+					p При весе заказа более 20 кг - доставка 300 руб
+					p вне зависимости от суммы заказа
+					p При заказе свыше 10 000 руб - доставка
+					p бесплатная, вне зависимости от веса заказа
+					br
+					p За пределами МКАД:
+					p Стоимость доставки по Московской области
+					p  за пределы МКАД оговаривается индивидуально
+					p  в зависимости от веса заказа и удаленности от МКАД,
+					p  но при этом мы делаем определенные скидки, а именно:
+					p -Если сумма заказа превышает 3000 рублей, то сумма 
+					p доставки снижается на 300 рублей.
+					p -Если сумма заказа превышает 10000 рублей, то сумма 
+					p доставки снижается на 500 рублей.
+
+		.delivery-img
+			img(src="img/delivery-img.jpg", alt="")
+
+
+
+
+
+//Include footer
+include ./block_html/footer.jade
+include ./block_html/script.jade
+
+
